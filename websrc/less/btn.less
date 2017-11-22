@@ -1,0 +1,76 @@
+// out: ../css/btn.css, compress: true, sourceMap: false
+@import 'variables.less';
+// -------------------------------------------------
+// Block '.btn'
+// -------------------------------------------------
+.btn {
+    position: relative;
+    border: 0;
+    outline: 0;
+    padding: 0 20px;
+    margin: 0;
+    background: #fff;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    transition: 300ms ease;
+    line-height: 40px;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border-radius: 4px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+    // Modificator '.btn.btn--blue'
+    &&--blue{
+        background-color: @btn-blue-background;
+        color: @btn-blue-color;
+        box-shadow: 0 4px 10px 0 rgba(33, 150, 243, 0.3);
+
+        // Action '.btn.btn--blue:focus'
+        // Action '.btn.btn--blue:hover'
+        // &:focus,
+        // &:hover {
+        //     background-color: @btn-blue-hover-background;
+        //     color: @btn-blue-hover-color;
+        //     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+        // }
+
+        // State '.btn.btn--blue.active'
+        // State '.btn.btn--blue:active'
+        // &.active,
+        // &:active {
+        //     background-color: @btn-blue-active-background;
+        //     color: @btn-blue-active-color;
+        // }
+    }
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.room .room__icon'
+    & &__icon{
+        transition: all 300ms;
+        
+        & + .btn__text{
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+  
+}

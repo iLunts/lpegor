@@ -1,0 +1,63 @@
+// out: ../css/header.css, compress: true, sourceMap: false
+@import 'variables.less';
+// -------------------------------------------------
+// Block '.header'
+// -------------------------------------------------
+.header{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    z-index: 102;
+
+    // ----------------------------------------------
+    // All modificators
+    // ----------------------------------------------
+    
+    
+    // ----------------------------------------------
+    // All elements
+    // ----------------------------------------------
+
+    // Element '.header .header__user'
+    // Element '.header .header__company'
+    & &__user,
+    & &__company{
+        display: flex;
+        align-items: center;
+        justify-content: space;
+        
+        &-avatar{
+            border-radius: 100px;
+            margin-right: 20px;
+        }
+    }
+    
+    // Element '.header .header__user'
+    & &__user{
+
+        &-name{
+            margin: 0;
+            font-weight: 600;
+        }
+
+        &-phone{
+            display: inline-block;
+            text-decoration: none;
+            color: inherit;
+            margin-top: 4px;
+            font-weight: 500;
+            border-bottom: 1px dashed #bbb;
+        }
+    }
+
+    // Element '.header .header__company'
+    & &__company{
+        
+        &-avatar{
+            border-radius: 4px;
+        }
+    }
+}
