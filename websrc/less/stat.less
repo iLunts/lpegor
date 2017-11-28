@@ -1,0 +1,68 @@
+// out: ../css/stat.css, compress: true, sourceMap: false
+@import 'variables.less';
+// -------------------------------------------------
+// Block '.stat'
+// -------------------------------------------------
+.stat{
+    position: relative;
+
+    // ----------------------------------------------
+    // All modificators
+    // ----------------------------------------------
+    
+    
+    // ----------------------------------------------
+    // All elements
+    // ----------------------------------------------
+
+    // Element '.stat .stat__panel'
+    & &__panel{
+        width: 450px;
+        margin: 0 auto;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        background-color: #232129;
+    }
+    
+    // Element '.stat .stat__progress'
+    & &__progress{
+        height: 10px;
+        padding: 2px;
+        background: #16141A;
+        
+        // Element '.stat .stat__progress-line'
+        &-line{
+            width: 34%;
+            height: 100%;
+            
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0268c2+0,0ae4fb+100 */
+            background: rgb(2,104,194); /* Old browsers */
+            background: -moz-linear-gradient(left, rgba(2,104,194,1) 0%, rgba(10,228,251,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, rgba(2,104,194,1) 0%,rgba(10,228,251,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, rgba(2,104,194,1) 0%,rgba(10,228,251,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0268c2', endColorstr='#0ae4fb',GradientType=1 ); /* IE6-9 */
+        }
+    }
+    
+    // Element '.stat .stat__total'
+    & &__total{
+        font-size: 17px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+    
+    // Element '.stat .stat__dig'
+    & &__dig{
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    
+    // Element '.stat .stat__money'
+    & &__money{
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 300;
+        color: #8D8D8D;
+    }
+}
