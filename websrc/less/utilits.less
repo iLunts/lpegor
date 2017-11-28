@@ -1,5 +1,128 @@
 // out: ../css/utilits.css, compress: true, sourceMap: false
 @import 'variables.less';
+
+// -------------------------------------------------
+// Block '.m' ~ margin
+// -------------------------------------------------
+.m {
+    margin: @margin-padding 0 !important;
+
+    // Small
+    &--sm{
+        margin: (@margin-padding / 2) 0 !important;
+    }
+    // Mini
+    &--mini{
+        margin: (@margin-padding / 4) 0 !important;
+    }
+
+    // Bottom
+    &--b {
+        margin: 0 0 @margin-padding !important;
+        &-xxlg {
+            margin: 0 0 (@margin-padding * 4) !important;
+        }
+        &-xlg {
+            margin: 0 0 (@margin-padding * 4) !important;
+        }
+        &-lg {
+            margin: 0 0 (@margin-padding * 2) !important;
+        }
+        &-md {
+            margin: 0 0 (@margin-padding * 1.5) !important;
+        }
+        &-sm {
+            margin: 0 0 (@margin-padding / 2) !important;
+        }
+        &-mini {
+            margin: 0 0 (@margin-padding / 4) !important;
+        }
+    }
+    // Top
+    &--t {
+        margin: @margin-padding 0 0 0 !important;
+
+        &-xxlg {
+            margin: (@margin-padding * 5) 0 0 0 !important;
+        }
+        &-xlg {
+            margin: (@margin-padding * 4) 0 0 0 !important;
+        }
+        &-lg {
+            margin: (@margin-padding * 2) 0 0 0 !important;
+        }
+        &-md {
+            margin: (@margin-padding * 1.5) 0 0 0 !important;
+        }
+        &-sm {
+            margin: (@margin-padding / 2) 0 0 0 !important;
+        }
+        &-mini {
+            margin: (@margin-padding / 4) 0 0 0 !important;
+        }
+        &-reset {
+            margin-top: 0 !important;
+        }
+    }
+    // Right
+    &--r {
+        margin: 0 @margin-padding 0 0 !important;
+        
+        &-lg {
+            margin: 0 (@margin-padding * 2) 0 0;
+        }
+        &-md {
+            margin: 0 (@margin-padding * 1.5) 0 0;
+        }
+        &-sm {
+            margin: 0 (@margin-padding / 2) 0 0;
+        }
+        &-mini {
+            margin: 0 (@margin-padding / 4) 0 0;
+        }
+    }
+    // Left
+    &--l {
+        margin: 0 0 0 @margin-padding !important;
+        &-sm {
+            margin: 0 0 0 (@margin-padding / 2) !important;
+        }
+        &-mini {
+            margin: 0 0 0 (@margin-padding / 4) !important;
+        }
+    }
+    // Auto
+    &--auto{
+        margin: 0 auto !important;
+    }
+    // Vertical
+    &--v{
+        margin: @margin-padding 0 !important;
+    
+        // Vertical large
+        &-xlg{
+            margin: (@margin-padding * 4) 0 !important;
+        }
+        &-lg{
+            margin: (@margin-padding * 2) 0 !important;
+        }
+        &-md{
+            margin: (@margin-padding * 1.5) 0 !important;
+        }
+        &-sm{
+            margin: (@margin-padding / 2) 0 !important;
+        }
+        &-mini{
+            margin: (@margin-padding / 4) 0 !important;
+        }
+
+    }
+    // Reset
+    &--reset {
+        margin: 0 !important;
+    }
+}
+
 // -------------------------------------------------
 // Block '.hidden'
 // -------------------------------------------------
@@ -15,4 +138,12 @@
     // -----------------------------------------
 
   
+}
+
+
+// -------------------------------------------------
+// Block '.line'
+// -------------------------------------------------
+.line{
+    border-top: 1px solid #eee;
 }

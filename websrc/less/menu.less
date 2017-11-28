@@ -1,0 +1,71 @@
+// out: ../css/menu.css, compress: true, sourceMap: false
+@import 'variables.less';
+// -------------------------------------------------
+// Block '.menu'
+// -------------------------------------------------
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 16px 0;
+    background: transparent;
+    z-index: 1001;
+    transition: all .3s;
+
+    // Status '.menu.isScroll'
+    &.isScroll{
+        background: rgba(0, 0, 0, .74);
+        
+        // Element '.menu.isScroll .menu__logo'
+        .menu__logo{
+            color: @color-blue;
+        }
+    }
+
+    // ---------------------------------------------
+    // All modificators
+    // ---------------------------------------------
+
+    // ---------------------------------------------
+    // All elements
+    // ---------------------------------------------
+    
+    // Element '.menu .menu__logo'
+    & &__logo{
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+
+    // Element '.menu .menu__list'
+    & &__list{
+        float: right;
+        // display: inline-block;
+        margin: 0;
+        padding: 0;
+        
+        // Element '.menu .menu__list-item'
+        &-item{
+            display: inline-block;
+        }
+
+        // Element '.menu .menu__list-link'
+        &-link{
+            padding: 0 10px;
+            color: rgba(255, 255, 255, .7);
+            font-weight: 300;
+        }
+
+        // Element '.menu .menu__list-btn'
+        &-btn{
+            color: #fff;
+            font-size: 14px;
+            background: #70C3DE;
+            border-color: #70C3DE;
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
+            margin-left: 10px;
+        }
+    }
+}

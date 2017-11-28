@@ -31,3 +31,7 @@ gulp.task('less-to-one-min-css', function () {
         }))
         .pipe(gulp.dest('content/css/'));
 });
+
+gulp.task('watch', function () {
+    gulp.watch(['websrc/less/*.less', 'scripts/*.js', 'index.html'], ['less-to-one-min-css']);
+});
