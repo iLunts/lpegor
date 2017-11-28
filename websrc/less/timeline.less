@@ -1,0 +1,101 @@
+// out: ../css/timeline.css, compress: true, sourceMap: false
+@import 'variables.less';
+// -------------------------------------------------
+// Block '.timeline'
+// -------------------------------------------------
+.timeline{
+    position: relative;
+
+    // ----------------------------------------------
+    // All modificators
+    // ----------------------------------------------
+    
+    
+    // ----------------------------------------------
+    // All elements
+    // ----------------------------------------------
+
+    // Element '.timeline .timeline__list'
+    & &__list{
+        position: relative;
+        display: block;
+
+        &:before{
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: 34px;
+            left: 0;
+            right: 0;
+            height: 6px;
+
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0268c2+0,0ae4fb+100 */
+            background: rgb(2,104,194); /* Old browsers */
+            background: -moz-linear-gradient(left, rgba(2,104,194,1) 0%, rgba(10,228,251,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, rgba(2,104,194,1) 0%,rgba(10,228,251,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, rgba(2,104,194,1) 0%,rgba(10,228,251,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0268c2', endColorstr='#0ae4fb',GradientType=1 ); /* IE6-9 */
+        }
+    }
+
+    // Element '.timeline .timeline__item'
+    & &__item{
+        position: relative;
+        float: left;
+        width: 20%;
+        text-align: center;
+        padding: 0 25px;
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: 28px;
+            right: 0;
+            display: block;
+            width: 14px;
+            height: 14px;
+            border-radius: 100px;
+            background-color: #059ad9;
+            border: 3px solid #fff;
+            z-index: 1;
+            box-shadow: 0 0 0 5px rgba(3, 125, 203, .32), 0 0 0 10px rgba(3, 125, 203, .1);
+
+        }
+
+        &:last-child{
+            &:after{
+                content: '';
+                border-radius: 0;
+                background-color: transparent;
+                border: 10px solid transparent;
+                border-left-color: rgba(10,228,251,1);
+                box-shadow: none;
+                height: auto;
+                width: auto;
+                top: 27px;
+                right: -14px
+            }
+        }
+    }
+
+    // Element '.timeline .timeline__year'
+    & &__year{
+        margin: 0 0 30px 0;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    // Element '.timeline .timeline__text'
+    & &__text{
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 300;
+    }
+}
