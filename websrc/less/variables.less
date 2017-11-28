@@ -1,187 +1,196 @@
 // Base
-@font-site:                      'Rubik', sans-serif;
-@font-icon:                      'icomoon';
+@font-site:                        'Rubik', sans-serif;
+@font-icon:                        'icomoon';
 
 // Breakpoints
 
-@breakpoint-fluid:               100%;
-// @breakpoint-fluid-widget:     ~"calc(100% - 200px)";
+@breakpoint-fluid:                 100%;
+// @breakpoint-fluid-widget:       ~"calc(100% - 200px)";
 
-@breakpoint-xsmall:              320px;
-@breakpoint-small:               768px;
-@breakpoint-medium:              1024px;
-@breakpoint-large:               1220px;
-@breakpoint-xlarge:              1600px;
+@breakpoint-xsmall:                320px;
+@breakpoint-small:                 768px;
+@breakpoint-medium:                1024px;
+@breakpoint-large:                 1220px;
+@breakpoint-xlarge:                1600px;
 
-@breakpoint-xsmall-max:          (@breakpoint-small - 1);
-@breakpoint-small-max:           (@breakpoint-medium - 1);
-@breakpoint-medium-max:          (@breakpoint-large - 1);
-@breakpoint-large-max:           (@breakpoint-xlarge - 1);
-@breakpoint-xlarge-max:          (@breakpoint-xlarge - 1);
+@breakpoint-xsmall-max:            (@breakpoint-small - 1);
+@breakpoint-small-max:             (@breakpoint-medium - 1);
+@breakpoint-medium-max:            (@breakpoint-large - 1);
+@breakpoint-large-max:             (@breakpoint-xlarge - 1);
+@breakpoint-xlarge-max:            (@breakpoint-xlarge - 1);
 
 // Color
-@color-yellow:                   #ffc92b;
-@color-yellow-dark:              #ffd633;
-@color-blue:                     #55A3BC;
-@color-blue-dark:                #1976d2;
-@color-green:                    #00a651;
-@color-red:                      #f44336;
-@color-red-dark:                 #d32f2f;
-@color-brown:                    #886500;
+@color-yellow:                     #ffc92b;
+@color-yellow-dark:                #ffd633;
+@color-blue:                       #55A3BC;
+@color-light-blue:                 #70C3DE;
+@color-blue-dark:                  #1976d2;
+@color-green:                      #00a651;
+@color-red:                        #f44336;
+@color-red-dark:                   #d32f2f;
+@color-brown:                      #886500;
 
 // Body
-@body-background:                #f8f8f8;
-// @body-background:             #fff;
+@body-background:                  #f8f8f8;
+// @body-background:               #fff;
 
 // Top-menu
-@top-menu-height:                62px;
+@top-menu-height:                  62px;
 
 // Link
-@link-margin:                    25px;
+@link-margin:                      25px;
 
 // Button
 // ~ Button primary
-@btn-primary-background:         #e7f3ff;
-@btn-primary-color:              #188bf5;
-@btn-primary-hover-background:   #c7e3ff;
-@btn-primary-hover-color:        #2196f3;
-@btn-primary-active-background:  #c7e3ff;
-@btn-primary-active-color:       #2196f3;
+@btn-primary-background:           #e7f3ff;
+@btn-primary-color:                #188bf5;
+@btn-primary-hover-background:     #c7e3ff;
+@btn-primary-hover-color:          #2196f3;
+@btn-primary-active-background:    #c7e3ff;
+@btn-primary-active-color:         #2196f3;
 
 
 // ~ Button blue
-@btn-blue-background:            @color-blue;
-@btn-blue-color:                 #fff;
-@btn-blue-hover-background:      #c7e3ff;
-@btn-blue-hover-color:           @color-blue;
-@btn-blue-active-background:     #c7e3ff;
-@btn-blue-active-color:          @color-blue;
+@btn-blue-background:              @color-blue;
+@btn-blue-color:                   #fff;
+@btn-blue-hover-background:        #c7e3ff;
+@btn-blue-hover-color:             @color-blue;
+@btn-blue-active-background:       #c7e3ff;
+@btn-blue-active-color:            @color-blue;
+
+// ~ Button light blue
+@btn-light-blue-background:        @color-light-blue;
+@btn-light-blue-color:             #fff;
+@btn-light-blue-hover-background:  #c7e3ff;
+@btn-light-blue-hover-color:       @color-light-blue;
+@btn-light-blue-active-background: #c7e3ff;
+@btn-light-blue-active-color:      @color-light-blue;
 
 // ~ Button yellow
-@btn-yellow-background:          @color-yellow;
-@btn-yellow-color:               #333;
-@btn-yellow-hover-background:    @color-yellow-dark;
-@btn-yellow-hover-color:         #333;
-@btn-yellow-active-background:   @color-yellow-dark;
-@btn-yellow-active-color:        #333;
+@btn-yellow-background:            @color-yellow;
+@btn-yellow-color:                 #333;
+@btn-yellow-hover-background:      @color-yellow-dark;
+@btn-yellow-hover-color:           #333;
+@btn-yellow-active-background:     @color-yellow-dark;
+@btn-yellow-active-color:          #333;
 
 // ~ Button red
-@btn-red-background:             @color-red;
-@btn-red-color:                  #fff;
-@btn-red-hover-background:       @color-red-dark;
-@btn-red-hover-color:            #fff;
-@btn-red-active-background:      @color-red-dark;
-@btn-red-active-color:           #fff;
+@btn-red-background:               @color-red;
+@btn-red-color:                    #fff;
+@btn-red-hover-background:         @color-red-dark;
+@btn-red-hover-color:              #fff;
+@btn-red-active-background:        @color-red-dark;
+@btn-red-active-color:             #fff;
 
 // ~ Button gray
-@btn-gray-background:            #eee;
-@btn-gray-color:                 #333;
-@btn-gray-hover-background:      #ddd;
-@btn-gray-hover-color:           #333;
-@btn-gray-active-background:     #ddd;
-@btn-gray-active-color:          #333;
+@btn-gray-background:              #eee;
+@btn-gray-color:                   #333;
+@btn-gray-hover-background:        #ddd;
+@btn-gray-hover-color:             #333;
+@btn-gray-active-background:       #ddd;
+@btn-gray-active-color:            #333;
 
 // ~ Button del
-@btn-del-background:             #fff;
-@btn-del-color:                  rgb(244, 67, 54);
-@btn-del-hover-background:       rgba(244, 67, 54, 0.1);
-@btn-del-hover-color:            @color-red;
-// @btn-del-active-background:   #c7e3ff;
-// @btn-del-active-color:        @color-blue;
+@btn-del-background:               #fff;
+@btn-del-color:                    rgb(244, 67, 54);
+@btn-del-hover-background:         rgba(244, 67, 54, 0.1);
+@btn-del-hover-color:              @color-red;
+// @btn-del-active-background:     #c7e3ff;
+// @btn-del-active-color:          @color-blue;
 
 // ~ Button success
-@btn-success-background:         rgba(24, 162, 75, 0.2);
-@btn-success-color:              #18a24b;
-@btn-success-hover-background:   rgba(24, 162, 75, 0.3);
-@btn-success-hover-color:        #18a24b;
-@btn-success-active-background:  rgba(24, 162, 75, 0.3);
-@btn-success-active-color:       #18a24b;
+@btn-success-background:           rgba(24, 162, 75, 0.2);
+@btn-success-color:                #18a24b;
+@btn-success-hover-background:     rgba(24, 162, 75, 0.3);
+@btn-success-hover-color:          #18a24b;
+@btn-success-active-background:    rgba(24, 162, 75, 0.3);
+@btn-success-active-color:         #18a24b;
 
 // ~ Button NORMAL
-@btn-height:                     30px;
-@btn-line-height:                30px;
-@btn-padding-horizontal:         14px;
-@btn-font-size:                  0.9rem;
-@btn-background:                 #fff;
-@btn-border-color:               #dcdcdc;
-@btn-border-radius:              4px;
-@btn-color:                      #90a4ae;
+@btn-height:                       30px;
+@btn-line-height:                  30px;
+@btn-padding-horizontal:           14px;
+@btn-font-size:                    0.9rem;
+@btn-background:                   #fff;
+@btn-border-color:                 #dcdcdc;
+@btn-border-radius:                4px;
+@btn-color:                        #90a4ae;
 
-// ~ Button:                     HOVER
-@btn-hover-background:           #ddeff9;
-@btn-hover-color:                #11a0f8;
+// ~ Button:                       HOVER
+@btn-hover-background:             #ddeff9;
+@btn-hover-color:                  #11a0f8;
 
-// ~ Button:                     ACTIVE
-@btn-active-background:          #11a0f8;
-@btn-active-color:               #fff;
+// ~ Button:                       ACTIVE
+@btn-active-background:            #11a0f8;
+@btn-active-color:                 #fff;
 
 // ~ Button MINI
-@btn-mini-height:                (@btn-height / 2);
-@btn-mini-line-height:           (@btn-height / 2);
-@btn-mini-font-size:             10px;
-@btn-mini-padding-horizontal:    6px;
+@btn-mini-height:                  (@btn-height / 2);
+@btn-mini-line-height:             (@btn-height / 2);
+@btn-mini-font-size:               10px;
+@btn-mini-padding-horizontal:      6px;
 
 // ~ Button SM
-@btn-sm-height:                  (@btn-height / 1.5);
-@btn-sm-line-height:             (@btn-height / 1.5);
-@btn-sm-font-size:               12px;
-@btn-sm-padding-horizontal:      12px;
+@btn-sm-height:                    (@btn-height / 1.5);
+@btn-sm-line-height:               (@btn-height / 1.5);
+@btn-sm-font-size:                 12px;
+@btn-sm-padding-horizontal:        12px;
 
 // ~ Button MD
-@btn-md-height:                  (@btn-height * 1.5);
-@btn-md-line-height:             (@btn-height * 1.5);
-@btn-md-font-size:               16px;
-@btn-md-padding-horizontal:      16px;
+@btn-md-height:                    (@btn-height * 1.5);
+@btn-md-line-height:               (@btn-height * 1.5);
+@btn-md-font-size:                 16px;
+@btn-md-padding-horizontal:        16px;
 
 // ~ Button LG
-@btn-lg-height:                  (@btn-height * 2);
-@btn-lg-line-height:             (@btn-height * 2);
-@btn-lg-font-size:               20px;
-@btn-lg-padding-horizontal:      24px;
+@btn-lg-height:                    (@btn-height * 2);
+@btn-lg-line-height:               (@btn-height * 2);
+@btn-lg-font-size:                 20px;
+@btn-lg-padding-horizontal:        24px;
 
 // ~ Button RADIO
-@btn-radio-border:               #dcdcdc;
-@btn-radio-border-active:        rgba(24, 162, 75, 1);
-@btn-radio-border-hover:         rgba(24, 162, 75, 0.4);
-@btn-radio-img-selected:         rgba(24, 162, 75, 0.7);
-@btn-success-active-color:       #fff;
+@btn-radio-border:                 #dcdcdc;
+@btn-radio-border-active:          rgba(24, 162, 75, 1);
+@btn-radio-border-hover:           rgba(24, 162, 75, 0.4);
+@btn-radio-img-selected:           rgba(24, 162, 75, 0.7);
+@btn-success-active-color:         #fff;
 
 // ~ Button DISABLED
-@btn-disabled-background:        #f5f5f5;
-@btn-disabled-color:             #999;
+@btn-disabled-background:          #f5f5f5;
+@btn-disabled-color:               #999;
 
 // ~ Button LINK
-@btn-link-color:                 #07D;
-@btn-link-hover-color:           #059;
-@btn-link-hover-text-decoration: underline;
-@btn-link-disabled-color:        #999;
+@btn-link-color:                   #07D;
+@btn-link-hover-color:             #059;
+@btn-link-hover-text-decoration:   underline;
+@btn-link-disabled-color:          #999;
 
 // Icon
-@icon-height:                    20px;
-@icon-font-size:                 20px;
-@icon-line-height:               20px;
+@icon-height:                      20px;
+@icon-font-size:                   20px;
+@icon-line-height:                 20px;
 
-@icon-height-mini:               15px;
-@icon-font-size-mini:            15px;
-@icon-line-height-mini:          15px;
+@icon-height-mini:                 15px;
+@icon-font-size-mini:              15px;
+@icon-line-height-mini:            15px;
 
-@icon-height-sm:                 18px;
-@icon-font-size-sm:              18px;
-@icon-line-height-sm:            18px;
+@icon-height-sm:                   18px;
+@icon-font-size-sm:                18px;
+@icon-line-height-sm:              18px;
 
-@icon-height-md:                 25px;
-@icon-font-size-md:              25px;
-@icon-line-height-md:            25px;
+@icon-height-md:                   25px;
+@icon-font-size-md:                25px;
+@icon-line-height-md:              25px;
 
-@icon-height-lg:                 30px;
-@icon-font-size-lg:              30px;
-@icon-line-height-lg:            30px;
+@icon-height-lg:                   30px;
+@icon-font-size-lg:                30px;
+@icon-line-height-lg:              30px;
 
 // Margin
-@margin-padding:                 20px;
+@margin-padding:                   20px;
 
 // Text
-@text-color-muted:               #999;
-@text-color-green:               #49ae65;
-@text-color-red:                 #EE3442;
-@text-color-blue:                #0091ca;
+@text-color-muted:                 #999;
+@text-color-green:                 #49ae65;
+@text-color-red:                   #EE3442;
+@text-color-blue:                  #0091ca;
