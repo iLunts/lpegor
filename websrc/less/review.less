@@ -74,11 +74,12 @@
         text-align: justify;
         margin-bottom: 24px;
 
-        &:first-letter{
+        &:first-letter,
+        &::first-letter{
             padding-left: 30px;
         }
 
-        &:before{
+        &:after{
             content: '';
             position: absolute;
             left: 0;
