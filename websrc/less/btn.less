@@ -87,6 +87,28 @@
         font-size: 15px;
     }
     
+    // Modificator '.btn.btn--scroll-up'
+    &&--scroll-up{
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjQ4NTUuMTc1IDU3NjYuODY0IDI1LjE2MiAxMy44NDIiPjxkZWZzPjxzdHlsZT4uYXtmaWxsOm5vbmU7c3Ryb2tlOiNmZmY7c3Ryb2tlLXdpZHRoOjRweDt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik0zNTYuNiw1NzMwLjdsMTEuNjI4LDkuNjcsMTAuOTMtOS42NyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTIzNS42NTggMTE1MDkuODY5KSByb3RhdGUoMTgwKSIvPjwvc3ZnPg==);
+        background-position: center;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, .7);
+        opacity: 0;
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        visibility: hidden;
+
+        &.isShow{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    
     // Modificator '.btn.btn--play'
     &&--play{
         padding-left: 50px;
@@ -106,6 +128,7 @@
         background-repeat: no-repeat;
         background-size: 30px;
         background-position: center;
+        padding: 0;
 
         &:hover{
             background-color: lighten(#2d2b34, 5%);

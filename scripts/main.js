@@ -3,10 +3,17 @@ $(window).scroll(function () {
 
     if (scroll >= 100) {
         $("#js-main-menu").addClass("isScroll");
+        $("#js-scroll-up").addClass("isShow");
     } else {
         $("#js-main-menu").removeClass("isScroll");
+        $("#js-scroll-up").removeClass("isShow");
     }
 });
+
+$("#js-scroll-up").click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 500);
+});
+
 
 // Select all links with hashes
 $('a[href*="#"]')
