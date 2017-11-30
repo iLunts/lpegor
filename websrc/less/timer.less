@@ -1,0 +1,71 @@
+// out: ../css/timer.css, compress: true, sourceMap: false
+@import 'variables.less';
+// -------------------------------------------------
+// Block '.timer'
+// -------------------------------------------------
+.timer {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.item {
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+    display: flex;
+    position: relative;
+    .d,
+    .h,
+    .m,
+    .s {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        border-radius: 50px;
+        box-shadow: inset 0 0 0 3px #DDF2F9;
+        color: #55A3BC;
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 300;
+
+        &:after {
+            font-size: 10px;
+            position: absolute;
+            bottom: 1px;
+        }
+    }
+    svg {
+        transform: rotate(-90deg);
+        stroke: #55A3BC;
+        width: 68px;
+        height: 68px;
+    }
+    .circle {
+        stroke-dasharray: 120;
+        stroke-dashoffset: 120;
+        transition: all 300ms linear;
+    }
+}
+
+.d:after {
+    content: 'Day';
+}
+
+.h:after {
+    content: 'Hour';
+}
+
+.m:after {
+    content: 'Min';
+}
+
+.s:after {
+    content: 'Sec';
+}
