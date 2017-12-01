@@ -137,6 +137,31 @@
 // -------------------------------------------------
 @media screen and (min-width: @breakpoint-sm-min) and (max-width: @breakpoint-sm-max){
 
+    // -------------------------------------------------
+    // Block '.t' ~ Text
+    // -------------------------------------------------
+    .t {
+        
+        // -----------------------------------------
+        // All modificators
+        // -----------------------------------------
+
+        // Modificator '.t--r-sm'
+        &--r-sm{
+            text-align: right !important;
+        }
+
+        // Modificator '.t--c-sm'
+        &--c-sm{
+            text-align: center !important;
+        }
+
+        &--title{
+            font-size: 34px;
+            line-height: 40px;
+        }
+    }
+
 }
 
 // -------------------------------------------------

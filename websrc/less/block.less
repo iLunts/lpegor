@@ -111,7 +111,6 @@
     // Block '.block'
     // -------------------------------------------------
     .block{
-        position: relative;
         padding: 40px 0;
 
         &:focus{
@@ -129,7 +128,6 @@
             background-size: 650px;
         }
     }
-
 }
 
 // -------------------------------------------------
@@ -137,6 +135,27 @@
 // -------------------------------------------------
 @media screen and (min-width: @breakpoint-sm-min) and (max-width: @breakpoint-sm-max){
 
+        // -------------------------------------------------
+        // Block '.block'
+        // -------------------------------------------------
+        .block{
+            padding: 40px 0;
+
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+
+            // ----------------------------------------------
+            // All modificators
+            // ----------------------------------------------
+
+            // Modificator '.block.block--main'
+            &&--main{
+                background-size: 630px;
+                padding-bottom: 70px;
+            }
+        }
 }
 
 // -------------------------------------------------
