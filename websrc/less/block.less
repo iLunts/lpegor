@@ -101,3 +101,61 @@
 
 
 }
+
+// -------------------------------------------------
+// Size xSmall
+// -------------------------------------------------
+@media screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max){
+
+    // -------------------------------------------------
+    // Block '.block'
+    // -------------------------------------------------
+    .block{
+        position: relative;
+        padding: 40px 0;
+
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+
+        // ----------------------------------------------
+        // All modificators
+        // ----------------------------------------------
+
+        // Modificator '.block.block--main'
+        &&--main{
+            padding: 90px 0 100px;
+            background-size: 650px;
+        }
+    }
+
+}
+
+// -------------------------------------------------
+// Size Small
+// -------------------------------------------------
+@media screen and (min-width: @breakpoint-sm-min) and (max-width: @breakpoint-sm-max){
+
+}
+
+// -------------------------------------------------
+// Size Medium
+// -------------------------------------------------
+@media screen and (min-width: @breakpoint-md-min) and (max-width: @breakpoint-md-max){
+
+}
+
+// -------------------------------------------------
+// Size Large
+// -------------------------------------------------
+@media screen and (min-width: @breakpoint-lg-min) and (max-width: @breakpoint-lg-max){
+
+}
+
+// -------------------------------------------------
+// Size xLarge
+// -------------------------------------------------
+@media screen and (min-width: @breakpoint-xlg-min){
+
+}

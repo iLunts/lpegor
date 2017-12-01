@@ -1,4 +1,4 @@
-// out: ../css/grid.css, compress: true, sourceMap: false
+// out: ../../css/components/grid.css, compress: true
 @import "variables.less";
 // Name:            Grid
 // Description:     Provides a responsive, fluid and nestable grid
@@ -39,6 +39,7 @@
 
 @grid-gutter-small-horizontal:                  10px;
 @grid-gutter-small-vertical:                    10px;
+@grid-gutter-medium-vertical:                   20px;
 
 @grid--divider-border:                           #ddd;
 @grid--divider-border-width:                     1px;
@@ -235,7 +236,7 @@
 .grid--md + .grid--md,
 .grid--medium > .grid--margin,
 .grid--md > .grid--margin,
-.grid--medium > * > .panel + .panel { margin-top: @grid-gutter-vertical; }
+.grid--medium > * > .panel + .panel { margin-top: @grid-gutter-medium-vertical; }
 
 
 /* Modifier: `grid--divider`
@@ -713,90 +714,267 @@
     .col--xs-7-10 { width: 70%; }
     .col--xs-9-10 { width: 90%; }
 
+
+    .col--xs-1-1 { 
+        & + .col--xs-1-1{
+            margin-top: 15px;
+        }
+    }
+
+}
+
+// ----------------------------------------
+// Block .push
+// ----------------------------------------
+[class*='push--'] { position: relative; }
+
+/* Halves */
+.push--1-2,
+.push--2-4,
+.push--3-6,
+.push--5-10 { left: 50%; }
+
+/* Thirds */
+.push--1-3,
+.push--2-6 { left: 33.333%; }
+.push--2-3,
+.push--4-6 { left: 66.666%; }
+
+/* Quarters */
+.push--1-4 { left: 25%; }
+.push--3-4 { left: 75%; }
+
+/* Fifths */
+.push--1-5,
+.push--2-10 { left: 20%; }
+.push--2-5,
+.push--4-10 { left: 40%; }
+.push--3-5,
+.push--6-10 { left: 60%; }
+.push--4-5,
+.push--8-10 { left: 80%; }
+
+/* Sixths */
+.push--1-6 { left: 16.666%; }
+.push--5-6 { left: 83.333%; }
+
+/* Tenths */
+.push--1-10 { left: 10%; }
+.push--3-10 { left: 30%; }
+.push--7-10 { left: 70%; }
+.push--9-10 { left: 90%; }
+
+
+/* Tablet and bigger */
+@media (min-width: @breakpoint-xsmall) {
+
+    [class*='push--'] { position: relative; }
+
+    /* Halves */
+    .push--xs-1-2,
+    .push--xs-2-4,
+    .push--xs-3-6,
+    .push--xs-5-10 { left: 50%; }
+
+    /* Thirds */
+    .push--xs-1-3,
+    .push--xs-2-6 { left: 33.333%; }
+    .push--xs-2-3,
+    .push--xs-4-6 { left: 66.666%; }
+
+    /* Quarters */
+    .push--xs-1-4 { left: 25%; }
+    .push--xs-3-4 { left: 75%; }
+
+    /* Fifths */
+    .push--xs-1-5,
+    .push--xs-2-10 { left: 20%; }
+    .push--xs-2-5,
+    .push--xs-4-10 { left: 40%; }
+    .push--xs-3-5,
+    .push--xs-6-10 { left: 60%; }
+    .push--xs-4-5,
+    .push--xs-8-10 { left: 80%; }
+
+    /* Sixths */
+    .push--xs-1-6 { left: 16.666%; }
+    .push--xs-5-6 { left: 83.333%; }
+
+    /* Tenths */
+    .push--xs-1-10 { left: 10%; }
+    .push--xs-3-10 { left: 30%; }
+    .push--xs-7-10 { left: 70%; }
+    .push--xs-9-10 { left: 90%; }
 }
 
 /* Tablet and bigger */
-@media (min-width: @breakpoint-medium) {
+@media (min-width: @breakpoint-small) {
 
-    [class*='push--'],
-    [class*='pull--'] { position: relative; }
+    // [class*='pull--'] { position: relative; }
+    [class*='push--'] { position: relative; }
+    // [class*='push--'],
+    // [class*='pull--'] { position: relative; }
 
     /* Halves */
-    .push--1-2,
-    .push--2-4,
-    .push--3-6,
-    .push--5-10 { left: 50%; }
+    .push--sm-1-2,
+    .push--sm-2-4,
+    .push--sm-3-6,
+    .push--sm-5-10 { left: 50%; }
 
     /* Thirds */
-    .push--1-3,
-    .push--2-6 { left: 33.333%; }
-    .push--2-3,
-    .push--4-6 { left: 66.666%; }
+    .push--sm-1-3,
+    .push--sm-2-6 { left: 33.333%; }
+    .push--sm-2-3,
+    .push--sm-4-6 { left: 66.666%; }
 
     /* Quarters */
-    .push--1-4 { left: 25%; }
-    .push--3-4 { left: 75%; }
+    .push--sm-1-4 { left: 25%; }
+    .push--sm-3-4 { left: 75%; }
 
     /* Fifths */
-    .push--1-5,
-    .push--2-10 { left: 20%; }
-    .push--2-5,
-    .push--4-10 { left: 40%; }
-    .push--3-5,
-    .push--6-10 { left: 60%; }
-    .push--4-5,
-    .push--8-10 { left: 80%; }
+    .push--sm-1-5,
+    .push--sm-2-10 { left: 20%; }
+    .push--sm-2-5,
+    .push--sm-4-10 { left: 40%; }
+    .push--sm-3-5,
+    .push--sm-6-10 { left: 60%; }
+    .push--sm-4-5,
+    .push--sm-8-10 { left: 80%; }
 
     /* Sixths */
-    .push--1-6 { left: 16.666%; }
-    .push--5-6 { left: 83.333%; }
+    .push--sm-1-6 { left: 16.666%; }
+    .push--sm-5-6 { left: 83.333%; }
 
     /* Tenths */
-    .push--1-10 { left: 10%; }
-    .push--3-10 { left: 30%; }
-    .push--7-10 { left: 70%; }
-    .push--9-10 { left: 90%; }
+    .push--sm-1-10 { left: 10%; }
+    .push--sm-3-10 { left: 30%; }
+    .push--sm-7-10 { left: 70%; }
+    .push--sm-9-10 { left: 90%; }
 
     /*
      * Pull
      */
 
      /* Halves */
-     .pull--1-2,
-     .pull--2-4,
-     .pull--3-6,
-     .pull--5-10 { left: -50%; }
+    //  .pull--1-2,
+    //  .pull--2-4,
+    //  .pull--3-6,
+    //  .pull--5-10 { left: -50%; }
 
      /* Thirds */
-     .pull--1-3,
-     .pull--2-6 { left: -33.333%; }
-     .pull--2-3,
-     .pull--4-6 { left: -66.666%; }
+    //  .pull--1-3,
+    //  .pull--2-6 { left: -33.333%; }
+    //  .pull--2-3,
+    //  .pull--4-6 { left: -66.666%; }
 
      /* Quarters */
-     .pull--1-4 { left: -25%; }
-     .pull--3-4 { left: -75%; }
+    //  .pull--1-4 { left: -25%; }
+    //  .pull--3-4 { left: -75%; }
 
      /* Fifths */
-     .pull--1-5,
-     .pull--2-10 { left: -20%; }
-     .pull--2-5,
-     .pull--4-10 { left: -40%; }
-     .pull--3-5,
-     .pull--6-10 { left: -60%; }
-     .pull--4-5,
-     .pull--8-10 { left: -80%; }
+    //  .pull--1-5,
+    //  .pull--2-10 { left: -20%; }
+    //  .pull--2-5,
+    //  .pull--4-10 { left: -40%; }
+    //  .pull--3-5,
+    //  .pull--6-10 { left: -60%; }
+    //  .pull--4-5,
+    //  .pull--8-10 { left: -80%; }
 
      /* Sixths */
-     .pull--1-6 { left: -16.666%; }
-     .pull--5-6 { left: -83.333%; }
+    //  .pull--1-6 { left: -16.666%; }
+    //  .pull--5-6 { left: -83.333%; }
 
      /* Tenths */
-     .pull--1-10 { left: -10%; }
-     .pull--3-10 { left: -30%; }
-     .pull--7-10 { left: -70%; }
-     .pull--9-10 { left: -90%; }
+    //  .pull--1-10 { left: -10%; }
+    //  .pull--3-10 { left: -30%; }
+    //  .pull--7-10 { left: -70%; }
+    //  .pull--9-10 { left: -90%; }
 
+}
+
+/* Tablet and bigger */
+@media (min-width: @breakpoint-medium) {
+
+    [class*='push--'] { position: relative; }
+
+    /* Halves */
+    .push--md-1-2,
+    .push--md-2-4,
+    .push--md-3-6,
+    .push--md-5-10 { left: 50%; }
+
+    /* Thirds */
+    .push--md-1-3,
+    .push--md-2-6 { left: 33.333%; }
+    .push--md-2-3,
+    .push--md-4-6 { left: 66.666%; }
+
+    /* Quarters */
+    .push--md-1-4 { left: 25%; }
+    .push--md-3-4 { left: 75%; }
+
+    /* Fifths */
+    .push--md-1-5,
+    .push--md-2-10 { left: 20%; }
+    .push--md-2-5,
+    .push--md-4-10 { left: 40%; }
+    .push--md-3-5,
+    .push--md-6-10 { left: 60%; }
+    .push--md-4-5,
+    .push--md-8-10 { left: 80%; }
+
+    /* Sixths */
+    .push--md-1-6 { left: 16.666%; }
+    .push--md-5-6 { left: 83.333%; }
+
+    /* Tenths */
+    .push--md-1-10 { left: 10%; }
+    .push--md-3-10 { left: 30%; }
+    .push--md-7-10 { left: 70%; }
+    .push--md-9-10 { left: 90%; }
+}
+
+/* Tablet and bigger */
+@media (min-width: @breakpoint-large) {
+
+    [class*='push--'] { position: relative; }
+
+    /* Halves */
+    .push--lg-1-2,
+    .push--lg-2-4,
+    .push--lg-3-6,
+    .push--lg-5-10 { left: 50%; }
+
+    /* Thirds */
+    .push--lg-1-3,
+    .push--lg-2-6 { left: 33.333%; }
+    .push--lg-2-3,
+    .push--lg-4-6 { left: 66.666%; }
+
+    /* Quarters */
+    .push--lg-1-4 { left: 25%; }
+    .push--lg-3-4 { left: 75%; }
+
+    /* Fifths */
+    .push--lg-1-5,
+    .push--lg-2-10 { left: 20%; }
+    .push--lg-2-5,
+    .push--lg-4-10 { left: 40%; }
+    .push--lg-3-5,
+    .push--lg-6-10 { left: 60%; }
+    .push--lg-4-5,
+    .push--lg-8-10 { left: 80%; }
+
+    /* Sixths */
+    .push--lg-1-6 { left: 16.666%; }
+    .push--lg-5-6 { left: 83.333%; }
+
+    /* Tenths */
+    .push--lg-1-10 { left: 10%; }
+    .push--lg-3-10 { left: 30%; }
+    .push--lg-7-10 { left: 70%; }
+    .push--lg-9-10 { left: 90%; }
 }
 
 // ---------------------------------------------------------------------------

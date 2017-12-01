@@ -37,18 +37,21 @@
         font-size: 24px;
         line-height: 24px;
         font-weight: 300;
+        vertical-align: middle;
+        margin-top: 5px;
+        display: inline-block;
     }
-
+    
     // Element '.menu .menu__list'
     & &__list{
         float: right;
-        // display: inline-block;
         margin: 0;
         padding: 0;
         
         // Element '.menu .menu__list-item'
         &-item{
             display: inline-block;
+            vertical-align: middle;
         }
 
         // Element '.menu .menu__list-link'
@@ -56,7 +59,7 @@
             padding: 0 10px;
             color: rgba(255, 255, 255, .7);
             font-weight: 300;
-            font-size: 14px;
+            font-size: 13px;
             text-transform: uppercase;
             transition: all .3s;
             
@@ -76,4 +79,39 @@
             margin-left: 10px;
         }
     }
+}
+
+// -------------------------------------------------
+// Size xSmall
+// -------------------------------------------------
+@media screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max){
+
+}
+
+// -------------------------------------------------
+// Size Small
+// -------------------------------------------------
+@media screen and (min-width: @breakpoint-sm-min) and (max-width: @breakpoint-sm-max){
+
+}
+
+// -------------------------------------------------
+// Size Medium
+// -------------------------------------------------
+@media screen and (min-width: @breakpoint-md-min) and (max-width: @breakpoint-md-max){
+
+}
+
+// -------------------------------------------------
+// Size Large
+// -------------------------------------------------
+@media screen and (min-width: @breakpoint-lg-min) and (max-width: @breakpoint-lg-max){
+
+}
+
+// -------------------------------------------------
+// Size xLarge
+// -------------------------------------------------
+@media screen and (min-width: @breakpoint-xlg-min){
+
 }
