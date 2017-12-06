@@ -85,3 +85,12 @@ setInterval(function () {
         }
     }
 }, 1000);
+
+function showMenu(){
+    if($('#js-menu').hasClass('opem')){
+        $('#js-menu').removeClass('open');
+    }
+    else{
+        $('#js-menu').addClass('open');
+    }
+}

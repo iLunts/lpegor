@@ -10,6 +10,18 @@ html{
     font-weight: 400;
 }
 
+svg{
+    fill: currentColor;
+    
+    [fill*='#']{
+        fill: currentColor;
+    }
+
+    [stroke*='#']{
+        stroke: currentColor;
+    }
+}
+
 // -------------------------------------------------
 // Block ''
 // -------------------------------------------------

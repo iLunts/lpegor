@@ -86,6 +86,79 @@
 // -------------------------------------------------
 @media screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max){
 
+    // -------------------------------------------------
+    // Block '.menu'
+    // -------------------------------------------------
+    .menu{
+        background: rgba(0, 0, 0, .74);
+
+        & &__logo{
+            color: #fff;
+        }
+
+        & &__burger{
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            color: #fff;
+            margin-top: -23px;
+        }
+
+        & &__mobile{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            color: #fff;
+            overflow: auto;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0;
+
+            &.open{
+                visibility: visible;
+                opacity: 1;
+            }
+
+            &-header{
+                color: #fff;
+                margin-bottom: 30px;
+            }
+
+            &-input{
+                position: relative;
+                width: 70%;
+                margin: 20px auto 60px;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…U1WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMTAwLjQ0NSkiLz48L2c+PC9nPjwvc3ZnPg==);
+                background-repeat: no-repeat;
+                background-size: 27px;
+                background-position: 5px center;
+            }
+
+            .menu__list{
+                display: block;
+                float: none;
+
+                .list__item{
+                    display: block;
+                    border-top: 1px solid #fff;
+                    
+                    &:last-child{
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+                
+                .list__link{
+                    display: block;
+                    padding: 20px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
 }
 
 // -------------------------------------------------
