@@ -89,8 +89,10 @@ setInterval(function () {
 function showMenu(){
     if($('#js-menu').hasClass('opem')){
         $('#js-menu').removeClass('open');
+        $('body').removeClass('open');
     }
     else{
         $('#js-menu').addClass('open');
+        $('body').addClass('open');
     }
 }
