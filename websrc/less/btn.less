@@ -30,6 +30,7 @@
     &:focus{
         outline: none;
         box-shadow: none;
+        border: 2px solid transparent;
     }
 
     & + &{
@@ -45,6 +46,11 @@
         border-color: @color-blue;
         background: #fff;
         color: @color-blue;
+
+        &:hover,
+        &:focus{
+            border: 2px solid @color-blue;
+        }
     }
 
     // Modificator '.btn.btn--border'
@@ -117,6 +123,10 @@
         background-repeat: no-repeat;
         background-position: 14px 11px;
         
+        &:hover,
+        &:focus{
+            border: 2px solid @color-blue;
+        }
     }
 
     // Modificator '.btn.btn--lang'
